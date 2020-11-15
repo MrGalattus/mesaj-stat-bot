@@ -8,9 +8,9 @@
   },
   "author": "Burak Denilen Türeme",
   "license": "ISC",
-  "dependencies": {
+    "dependencies": {
+    "canvas": "^2.6.1",
     "discord.js": "^12.4.1",
-    "quick.db": "7.1.3",
-    "canvas":"2.6.1"
+    "quick.db": "^7.1.3"
   }
 }
