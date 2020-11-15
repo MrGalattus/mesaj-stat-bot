@@ -1,8 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('./ayarlar.json');
+const chalk = require('chalk');
 const fs = require('fs');
+const moment = require('moment');
 const db = require('quick.db');
+const ms = require('parse-ms');
+const canvas = require('canvas')
 require('./util/eventLoader.js')(client);
 
 client.reload = command => {
@@ -74,7 +78,7 @@ client.unload = command => {
 
 var prefix = ayarlar.prefix;
 
-client.on('message' , async(message) =>{
+client.on('message' , async(message,Burak,Denilen,türeme) =>{
   if(message.author.bot) return;
   let kanallar = ["kanal.id","kanal.id"] //her kanal ekleyeceğinde virgül çek, tırnak aç kanal idyi yaz.
  
@@ -86,7 +90,7 @@ client.on('message' , async(message) =>{
   }
 })
 
-client.on('messageDelete' , async(message) =>{
+client.on('messageDelete' , async(message,Burak,Denilen,türeme) =>{
   if(message.author.bot) return;
   let user = message.author
   let kanallar = ["kanal.id","kanal.id"] //her kanal ekleyeceğinde virgül çek, tırnak aç kanal idyi yaz.
@@ -101,7 +105,7 @@ if(!kanallar.includes(message.channel.id)){
   }
 }
 })
-client.on('messageUpdate' , async(message1 , message2) =>{
+client.on('messageUpdate' , async(message1 , message2,Burak,Denilen,türeme) =>{
 if(message1.author.bot) return
 if(message2.author.bot) return;
 
