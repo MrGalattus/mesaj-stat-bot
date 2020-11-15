@@ -73,7 +73,7 @@ client.unload = command => {
 
 var prefix = ayarlar.prefix;
 
-client.on('message' , async(message,Burak,Denilen,türeme) =>{
+client.on('message' , async(message) =>{
   if(message.author.bot) return;
   let kanallar = ["kanal.id","kanal.id"] //her kanal ekleyeceğinde virgül çek, tırnak aç kanal idyi yaz.
  
@@ -85,7 +85,7 @@ client.on('message' , async(message,Burak,Denilen,türeme) =>{
   }
 })
 
-client.on('messageDelete' , async(message,Burak,Denilen,türeme) =>{
+client.on('messageDelete' , async(message) =>{
   if(message.author.bot) return;
   let user = message.author
   let kanallar = ["kanal.id","kanal.id"] //her kanal ekleyeceğinde virgül çek, tırnak aç kanal idyi yaz.
@@ -100,7 +100,7 @@ if(!kanallar.includes(message.channel.id)){
   }
 }
 })
-client.on('messageUpdate' , async(message1 , message2,Burak,Denilen,türeme) =>{
+client.on('messageUpdate' , async(message1 , message2) =>{
 if(message1.author.bot) return
 if(message2.author.bot) return;
 
