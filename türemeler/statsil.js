@@ -20,7 +20,6 @@ message.channel.send(' <@'+kullanıcı+'> adlı kişiden '+Number(args[1])+' rol
 };
 
 exports.conf = {
-  altyapı:türeme,
   enabled: true,
   guildOnly: true,
   aliases: [],
