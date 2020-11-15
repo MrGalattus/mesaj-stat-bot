@@ -54,7 +54,6 @@ let bdt = "https://st3.depositphotos.com/1000393/37488/i/600/depositphotos_37488
 
 
 exports.conf = {
-    altyapı:türeme,
     enabled: true,
     guildOnly: false,
     aliases: ["stat" , "stats" , "liste" , "top" , "kelimeler" , "üyesıralaması"],
