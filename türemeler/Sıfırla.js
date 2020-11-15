@@ -23,7 +23,6 @@ exports.run = async (client, message, args) => {
 }
 
 exports.conf = {
-    altyapı:türeme,
     enabled: true,
     guildOnly: false,
     aliases: ["sıfırla","temizle"],
