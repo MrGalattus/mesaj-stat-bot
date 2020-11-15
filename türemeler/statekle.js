@@ -22,7 +22,6 @@ message.channel.send(' <@'+kullanıcı+'> adlı kişiye '+Number(args[1])+' mesa
 };
 
 exports.conf = {
-  altyapı:türeme,
   enabled: true,
   guildOnly: true,
   aliases: ["puanekle","mesajekle","ekle"],
